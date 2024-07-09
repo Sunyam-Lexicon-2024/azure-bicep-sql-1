@@ -9,7 +9,7 @@ public class Driver
     public string Host { get; } = "lexicon-demoserver-pg.postgres.database.azure.com";
     public string User { get; } = "pgadmin";
     public string DBName { get; } = "postgres";
-    public string Password { get; } = "PGadminpass1!";
+    public string Password { get; } = Environment.GetEnvironmentVariable("PGPASSWORD");
     public string Port { get; } = "5432";
 
     public Driver()
