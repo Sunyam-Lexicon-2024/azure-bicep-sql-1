@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzurePG.Client", "AzurePG.Client\AzurePG.Client.csproj", "{937B87B7-1E3E-4C37-8212-9512114E71A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureSQL.API", "AzureSQL.API\AzureSQL.API.csproj", "{388E7888-613B-4243-843C-9B8AE7DFFDAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{937B87B7-1E3E-4C37-8212-9512114E71A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{937B87B7-1E3E-4C37-8212-9512114E71A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{937B87B7-1E3E-4C37-8212-9512114E71A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{388E7888-613B-4243-843C-9B8AE7DFFDAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388E7888-613B-4243-843C-9B8AE7DFFDAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388E7888-613B-4243-843C-9B8AE7DFFDAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388E7888-613B-4243-843C-9B8AE7DFFDAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
