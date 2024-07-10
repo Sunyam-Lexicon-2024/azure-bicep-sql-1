@@ -4,23 +4,8 @@ namespace AzurePG.Client.Postgres;
 
 public class Driver
 {
-    private readonly string _connectionString;
-
-    public string Host { get; } = "lexicon-demoserver-pg.postgres.database.azure.com";
-    public string User { get; } = "pgadmin";
-    public string DBName { get; } = "postgres";
-    public string Password { get; } = Environment.GetEnvironmentVariable("PGPASSWORD");
-    public string Port { get; } = "5432";
-
-    public Driver()
-    {
-        _connectionString = string.Format("Server={0};UserId={1};Database={2};Port={3};Password={4};SSLMode=require",
-            Host,
-            User,
-            DBName,
-            Port,
-            Password);
-    }
+    private readonly string _connectionString = Environment.GetEnvironmentVariable("AZURE_PG_CONNECTION_STRING")
+        ?? throw new InvalidOperationException("Could not read connection string fron environment");
 
     public void Create()
     {
