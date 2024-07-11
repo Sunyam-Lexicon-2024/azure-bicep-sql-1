@@ -11,7 +11,7 @@ public class Endpoint : EndpointWithoutRequest<Response>
 
     public override async Task HandleAsync(CancellationToken ct)
     {
-        string connectionString = Config["ConnectionStrings:AZURE_SQL_CONNECTIONSTRING"]
+        string connectionString = Config.GetConnectionString("AZURE_SQL_CONNECTIONSTRING")
          ?? throw new InvalidOperationException("Could get azure sql connection string from configuration");
 
         var rows = new List<string>();
