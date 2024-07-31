@@ -54,9 +54,9 @@ resource postgresServer 'Microsoft.DBforPostgreSQL/flexibleServers@2023-12-01-pr
     administratorLoginPassword: administratorLoginPassword
     network: {
       delegatedSubnetResourceId: (empty(virtualNetworkExternalId)
-        ? json('null')
+        ? null
         : json('\'${virtualNetworkExternalId}/subnets/${subnetName}\''))
-      privateDnsZoneArmResourceId: (empty(virtualNetworkExternalId) ? json('null') : privateDnsZoneArmResourceId)
+      privateDnsZoneArmResourceId: (empty(virtualNetworkExternalId) ? null : privateDnsZoneArmResourceId)
     }
     highAvailability: {
       mode: haMode
