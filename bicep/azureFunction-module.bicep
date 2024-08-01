@@ -16,8 +16,9 @@ param location string = resourceGroup().location
 @allowed([
   'node'
   'dotnet'
+  'dotnet-isolated'
 ])
-param runtime string = 'node'
+param runtime string = 'dotnet-isolated'
 
 var functionAppName = appName
 var hostingPlanName = appName
@@ -73,10 +74,6 @@ resource functionApp 'Microsoft.Web/sites@2023-12-01' = {
         {
           name: 'FUNCTIONS_EXTENSION_VERSION'
           value: '~4'
-        }
-        {
-          name: 'WEBSITE_NODE_DEFAULT_VERSIONm'
-          value: '~14'
         }
         {
           name: 'FUNCTIONS_WORKER_RUNTIME'

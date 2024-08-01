@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureSQL.API", "AzureSQL.AP
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureFunctions", "AzureFunctions", "{8BE7317C-3DDA-4BC1-A54F-510D0DC35ACB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctions", "AzureFunctions\Function1\AzureFunctions.csproj", "{D20DD13D-6C09-41E2-86CD-FE33A5184645}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctions", "AzureFunctions\AzureFunctions.csproj", "{D20DD13D-6C09-41E2-86CD-FE33A5184645}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
