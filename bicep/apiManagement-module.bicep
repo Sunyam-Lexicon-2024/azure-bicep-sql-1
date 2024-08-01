@@ -44,3 +44,15 @@ resource apiManagementService 'Microsoft.ApiManagement/service@2023-09-01-previe
     publisherName: publisherName
   }
 }
+
+resource apiInstance 'Microsoft.ApiManagement/service/apis@2023-09-01-preview' = {
+  name: 'demo-api'
+  parent: apiManagementService
+  properties: {
+    displayName: 'Demo API'
+    protocols: [
+      'https'
+    ]
+    path: 'demo-api'
+  }
+}

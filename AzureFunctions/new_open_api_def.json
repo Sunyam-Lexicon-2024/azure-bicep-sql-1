@@ -1,0 +1,56 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "Demo API",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "https://apiserviceaiw4ucnjtkvsu.azure-api.net/demo"
+        }
+    ],
+    "paths": {
+        "/FunctionsOrchestration_HttpStart": {
+            "get": {
+                "summary": "FunctionsOrchestration_HttpStart",
+                "operationId": "get-functionsorchestration-httpstart",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            },
+            "post": {
+                "summary": "FunctionsOrchestration_HttpStart",
+                "operationId": "post-functionsorchestration-httpstart",
+                "responses": {
+                    "200": {
+                        "description": null
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "apiKeyHeader": {
+                "type": "apiKey",
+                "name": "Ocp-Apim-Subscription-Key",
+                "in": "header"
+            },
+            "apiKeyQuery": {
+                "type": "apiKey",
+                "name": "subscription-key",
+                "in": "query"
+            }
+        }
+    },
+    "security": [
+        {
+            "apiKeyHeader": []
+        },
+        {
+            "apiKeyQuery": []
+        }
+    ]
+}
